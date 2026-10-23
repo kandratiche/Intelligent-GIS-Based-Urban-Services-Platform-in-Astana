@@ -1,0 +1,52 @@
+flowchart TB
+    subgraph CLIENT["Client tier"]
+        UI["Web map interface<br/>(OpenStreetMap-based)"]
+    end
+
+    subgraph APP["Application tier: Python REST API"]
+        GW["REST API gateway"]
+        AUTH["Authentication and<br/>role-based access control"]
+        PARK["Parking module"]
+        RES["Reservation module"]
+        HAZ["Hazard report module"]
+        LF["Lost-and-found module"]
+        DSS["Decision-support module<br/>(staff map, statistics)"]
+        PRIV["Privacy layer<br/>(location aggregation,<br/>image checks)"]
+    end
+
+    subgraph AI["AI tier"]
+        CLS["Hazard classifier<br/>(multilingual text encoder + classifier)"]
+        MATCH["Lost-item matcher<br/>(image embeddings + text + location)"]
+        PRED["Parking predictor<br/>(30-min occupancy regression)"]
+    end
+
+    subgraph DATA["Data tier"]
+        DB[("PostgreSQL + PostGIS<br/>common GIS data model")]
+        FS[("Image storage")]
+    end
+
+    GEN["Synthetic data generator<br/>and dataset tools"]
+    OSM[("OpenStreetMap")]
+
+    UI -- "HTTPS / JSON" --> GW
+    UI -- "map tiles" --> OSM
+    GW --> AUTH
+    GW --> PARK
+    GW --> RES
+    GW --> HAZ
+    GW --> LF
+    GW --> DSS
+    HAZ --> CLS
+    LF --> MATCH
+    PARK --> PRED
+    HAZ --> PRIV
+    LF --> PRIV
+    DSS --> PRIV
+    PARK --> DB
+    RES --> DB
+    HAZ --> DB
+    LF --> DB
+    DSS --> DB
+    LF --> FS
+    HAZ --> FS
+    GEN --> DB
