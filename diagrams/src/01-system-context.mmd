@@ -1,0 +1,26 @@
+flowchart LR
+    resident([Resident])
+    driver([Driver])
+    reporter([Citizen reporter])
+    owner([Item owner / finder])
+    staff([City staff])
+    admin([Administrator])
+
+    P["AI-Enhanced GIS-Based<br/>Urban Services Platform<br/>(Astana)"]
+
+    osm[("OpenStreetMap data<br/>(roads, buildings, parking points)")]
+    open[("Official open data<br/>(if available)")]
+    gen[("Synthetic data generator<br/>(parking series, reports, items)")]
+    notif[("Notifications<br/>(e-mail / push)")]
+
+    driver -- "checks availability and forecast,<br/>reserves a place" --> P
+    resident -- "views map and services" --> P
+    reporter -- "submits hazard reports<br/>(photo, GPS, text)" --> P
+    owner -- "posts / searches lost and found items" --> P
+    staff -- "reviews reports, parking load,<br/>decision-support map" --> P
+    admin -- "manages users, zones, roles" --> P
+
+    osm -- "base map and spatial data" --> P
+    open -- "optional datasets" --> P
+    gen -- "labelled test data" --> P
+    P -- "reservation and report status updates" --> notif

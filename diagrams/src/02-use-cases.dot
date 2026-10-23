@@ -1,0 +1,38 @@
+digraph UC {
+  rankdir=LR; splines=true; nodesep=0.22; ranksep=1.4; fontname="Helvetica";
+  node [fontname="Helvetica", fontsize=11];
+  edge [fontname="Helvetica", fontsize=9, arrowhead=none];
+  node [shape=box, style="rounded", margin="0.12,0.06"];
+  Driver; Reporter [label="Citizen reporter"]; Owner [label="Item owner / finder"]; Staff [label="City staff"]; Admin [label="Administrator"];
+  subgraph cluster_sys {
+    label="Urban Services Platform (Astana)"; style=rounded; color="#555555"; fontsize=13;
+    node [shape=ellipse, style=solid];
+    P1 [label="View parking map\nand availability"];
+    P2 [label="View 30-min\noccupancy forecast"];
+    P3 [label="Reserve parking place"];
+    P4 [label="Cancel reservation"];
+    H1 [label="Submit hazard report"];
+    H2 [label="Track report status"];
+    L1 [label="Post lost / found item"];
+    L2 [label="Search lost items\nand view top-5 matches"];
+    S1 [label="View decision-support map"];
+    S2 [label="Review and verify\nhazard reports"];
+    S3 [label="View parking load\nand forecasts"];
+    A1 [label="Manage zones and users"];
+    AU [label="Authenticate"];
+    C1 [label="Classify hazard report\n(AI)"];
+    C2 [label="Match lost items (AI)"];
+    C3 [label="Predict parking occupancy (AI)"];
+  }
+  Driver -> P1; Driver -> P2; Driver -> P3; Driver -> P4;
+  Reporter -> H1; Reporter -> H2;
+  Owner -> L1; Owner -> L2;
+  Staff -> S1; Staff -> S2; Staff -> S3;
+  Admin -> A1;
+  edge [arrowhead=open, style=dashed];
+  P3 -> AU [label="«include»"]; P4 -> AU [label="«include»"];
+  H1 -> AU [label="«include»"]; L1 -> AU [label="«include»"];
+  S1 -> AU [label="«include»"]; S2 -> AU [label="«include»"]; A1 -> AU [label="«include»"];
+  H1 -> C1 [label="«include»"]; L2 -> C2 [label="«include»"]; P2 -> C3 [label="«include»"];
+  S3 -> P2 [label="«include»"];
+}
