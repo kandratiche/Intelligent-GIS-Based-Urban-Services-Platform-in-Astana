@@ -1,0 +1,39 @@
+Summary,Description,Type,Priority,State,Assignee,Subsystem
+GIS-1: Project proposal and scope,Epic 0 Analysis and documentation (until 24 Oct). Responsible: Arlan Aidarov (proposed).,Task,Critical,Open,Arlan Aidarov,Epic 0 Analysis and documentation (until 24 Oct)
+GIS-2: 3–5 discussions with users/client; fill log,Epic 0 Analysis and documentation (until 24 Oct). Responsible: Arlan Aidarov; Ramazan Ashirbek; K (one each) (proposed).,Task,Critical,Open,Arlan Aidarov,Epic 0 Analysis and documentation (until 24 Oct)
+"GIS-3: Literature review: add DOIs, search log",Epic 0 Analysis and documentation (until 24 Oct). Responsible: Arlan Aidarov (proposed).,Task,Critical,Open,Arlan Aidarov,Epic 0 Analysis and documentation (until 24 Oct)
+GIS-4: Existing system comparison with screenshots,Epic 0 Analysis and documentation (until 24 Oct). Responsible: Kairat Bulatov (proposed).,Task,Critical,Open,Kairat Bulatov,Epic 0 Analysis and documentation (until 24 Oct)
+"GIS-5: Technology comparison, review with supervisor",Epic 0 Analysis and documentation (until 24 Oct). Responsible: Ramazan Ashirbek (proposed).,Task,Critical,Open,Ramazan Ashirbek,Epic 0 Analysis and documentation (until 24 Oct)
+GIS-6: Requirements and acceptance criteria,Epic 0 Analysis and documentation (until 24 Oct). Responsible: Ramazan Ashirbek (proposed).,Task,Critical,Open,Ramazan Ashirbek,Epic 0 Analysis and documentation (until 24 Oct)
+GIS-7: Architecture diagrams and description,Epic 0 Analysis and documentation (until 24 Oct). Responsible: Ramazan Ashirbek (proposed).,Task,Critical,Open,Ramazan Ashirbek,Epic 0 Analysis and documentation (until 24 Oct)
+GIS-8: Verification and evaluation plan,Epic 0 Analysis and documentation (until 24 Oct). Responsible: Arlan Aidarov (proposed).,Task,Critical,Open,Arlan Aidarov,Epic 0 Analysis and documentation (until 24 Oct)
+GIS-9: Wireframes (prototype materials),Epic 0 Analysis and documentation (until 24 Oct). Responsible: Kairat Bulatov (proposed).,Task,Critical,Open,Kairat Bulatov,Epic 0 Analysis and documentation (until 24 Oct)
+GIS-10: Supervisor review meeting and feedback log,Epic 0 Analysis and documentation (until 24 Oct). Responsible: Arlan Aidarov (proposed).,Task,Critical,Open,Arlan Aidarov,Epic 0 Analysis and documentation (until 24 Oct)
+"GIS-11: README, repository structure, contribution evidence",Epic 0 Analysis and documentation (until 24 Oct). Responsible: Kairat Bulatov (proposed).,Task,Critical,Open,Kairat Bulatov,Epic 0 Analysis and documentation (until 24 Oct)
+"GIS-12: Repository, branching rules, CI",Epic 1 Infrastructure and data model. Responsible: Ramazan Ashirbek (proposed).,Task,Major,Open,Ramazan Ashirbek,Epic 1 Infrastructure and data model
+GIS-13: Docker Compose: PostGIS + API + web,Epic 1 Infrastructure and data model. Responsible: Ramazan Ashirbek (proposed).,Task,Major,Open,Ramazan Ashirbek,Epic 1 Infrastructure and data model
+GIS-14: Common GIS data model and migrations (from ER diagram),Epic 1 Infrastructure and data model. Responsible: Ramazan Ashirbek (proposed).,Task,Major,Open,Ramazan Ashirbek,Epic 1 Infrastructure and data model
+GIS-15: Authentication and role-based access (FR-C1),Epic 1 Infrastructure and data model. Responsible: Ramazan Ashirbek (proposed).,Task,Major,Open,Ramazan Ashirbek,Epic 1 Infrastructure and data model
+GIS-16: Synthetic data generators with fixed seeds (NFR-D1),Epic 1 Infrastructure and data model. Responsible: Arlan Aidarov (proposed).,Task,Major,Open,Arlan Aidarov,Epic 1 Infrastructure and data model
+"GIS-17: Parking zones API and map layer (FR-P1, P3)",Epic 2 Parking and reservation. Responsible: Ramazan Ashirbek (proposed).,Task,Major,Open,Ramazan Ashirbek,Epic 2 Parking and reservation
+GIS-18: Reservation with capacity check in transaction (FR-R1–R3),Epic 2 Parking and reservation. Responsible: Kairat Bulatov (proposed).,Task,Major,Open,Kairat Bulatov,Epic 2 Parking and reservation
+"GIS-19: Parking predictor + baseline (FR-P2, NFR-A1)",Epic 2 Parking and reservation. Responsible: Arlan Aidarov (proposed).,Task,Major,Open,Arlan Aidarov,Epic 2 Parking and reservation
+GIS-20: Reservation expiry (FR-R4),Epic 2 Parking and reservation. Responsible: Kairat Bulatov (proposed).,Task,Minor,Open,Kairat Bulatov,Epic 2 Parking and reservation
+"GIS-21: Collect ≈ 600 reports, annotate, compute kappa",Epic 3 Hazard reporting. Responsible: Arlan Aidarov; Kairat Bulatov (proposed).,Task,Major,Open,Arlan Aidarov,Epic 3 Hazard reporting
+"GIS-22: Report submission API and form (FR-H1, H2)",Epic 3 Hazard reporting. Responsible: Kairat Bulatov (proposed).,Task,Major,Open,Kairat Bulatov,Epic 3 Hazard reporting
+GIS-23: Hazard classifier + keyword baseline (FR-H3),Epic 3 Hazard reporting. Responsible: Arlan Aidarov (proposed).,Task,Major,Open,Arlan Aidarov,Epic 3 Hazard reporting
+"GIS-24: Staff review and status workflow (FR-H4, H5, H6)",Epic 3 Hazard reporting. Responsible: Ramazan Ashirbek (proposed).,Task,Major,Open,Ramazan Ashirbek,Epic 3 Hazard reporting
+GIS-25: Image privacy check (FR-H7),Epic 3 Hazard reporting. Responsible: Arlan Aidarov (proposed).,Task,Normal,Open,Arlan Aidarov,Epic 3 Hazard reporting
+GIS-26: Create ≈ 300 item records and matched pairs,Epic 4 Lost-and-found. Responsible: Kairat Bulatov (proposed).,Task,Major,Open,Kairat Bulatov,Epic 4 Lost-and-found
+"GIS-27: Item API and forms (FR-L1, L3, L5)",Epic 4 Lost-and-found. Responsible: Kairat Bulatov (proposed).,Task,Major,Open,Kairat Bulatov,Epic 4 Lost-and-found
+GIS-28: Matcher (embeddings + text + location) and text-filter baseline (FR-L2),Epic 4 Lost-and-found. Responsible: Arlan Aidarov (proposed).,Task,Major,Open,Arlan Aidarov,Epic 4 Lost-and-found
+GIS-29: Match confirmation workflow (FR-L4),Epic 4 Lost-and-found. Responsible: Kairat Bulatov (proposed).,Task,Normal,Open,Kairat Bulatov,Epic 4 Lost-and-found
+GIS-30: Staff map with layers and filters (FR-S1),Epic 5 Staff decision-support map. Responsible: Ramazan Ashirbek (proposed).,Task,Major,Open,Ramazan Ashirbek,Epic 5 Staff decision-support map
+GIS-31: Density/heatmap and counts (FR-S2),Epic 5 Staff decision-support map. Responsible: Ramazan Ashirbek (proposed).,Task,Normal,Open,Ramazan Ashirbek,Epic 5 Staff decision-support map
+"GIS-32: Aggregated location and CSV export (FR-S3, S4)",Epic 5 Staff decision-support map. Responsible: Ramazan Ashirbek (proposed).,Task,Normal,Open,Ramazan Ashirbek,Epic 5 Staff decision-support map
+GIS-33: Ethics application and consent form,Epic 6 Evaluation. Responsible: Arlan Aidarov (proposed).,Task,Critical,Open,Arlan Aidarov,Epic 6 Evaluation
+GIS-34: Automated functional/integration tests,Epic 6 Evaluation. Responsible: Ramazan Ashirbek; Kairat Bulatov (proposed).,Task,Major,Open,Ramazan Ashirbek,Epic 6 Evaluation
+"GIS-35: Model evaluation report (CI, per language/category)",Epic 6 Evaluation. Responsible: Arlan Aidarov (proposed).,Task,Major,Open,Arlan Aidarov,Epic 6 Evaluation
+GIS-36: Load tests (p50/p95),Epic 6 Evaluation. Responsible: Ramazan Ashirbek (proposed).,Task,Major,Open,Ramazan Ashirbek,Epic 6 Evaluation
+"GIS-37: User study (15–20 participants), SUS, Likert",Epic 6 Evaluation. Responsible: Arlan Aidarov; Ramazan Ashirbek; Kairat Bulatov (proposed).,Task,Major,Open,Arlan Aidarov,Epic 6 Evaluation
+GIS-38: Analysis and final article,Epic 6 Evaluation. Responsible: Arlan Aidarov; Ramazan Ashirbek; Kairat Bulatov (proposed).,Task,Major,Open,Arlan Aidarov,Epic 6 Evaluation
